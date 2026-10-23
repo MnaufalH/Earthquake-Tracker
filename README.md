@@ -11,11 +11,11 @@
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/home.png" width="200" alt="Halaman utama">
+  <img src="../earthquaketracker/lib/assets/utama.png" width="200" alt="Halaman utama">
   &nbsp;
-  <img src="docs/screenshots/detail.png" width="200" alt="Halaman detail">
+  <img src="../earthquaketracker/lib/assets/detail.png" width="200" alt="Halaman detail">
   &nbsp;
-  <img src="docs/screenshots/error.png" width="200" alt="Tampilan error">
+  <img src="../earthquaketracker/lib/assets/error.png" width="200" alt="Tampilan error">
 </p>
 
 ## Tentang aplikasi

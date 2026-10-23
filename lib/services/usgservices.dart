@@ -36,7 +36,7 @@ class UsgsService {
     final start = end.subtract(period);
 
     final params = <String, String>{
-      'format': 'geojson',
+      'format': 'error',
       'eventtype': 'earthquake',
       'orderby': 'time',
       'limit': '$limit',
