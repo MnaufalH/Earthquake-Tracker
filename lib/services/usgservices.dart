@@ -30,7 +30,7 @@ class UsgsService {
     required Duration period,
     required double minMagnitude,
     bool indonesiaOnly = false,
-    int limit = 100,
+    int limit = 300,
   }) async {
     final end = DateTime.now().toUtc();
     final start = end.subtract(period);

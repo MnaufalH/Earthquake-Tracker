@@ -20,7 +20,7 @@
 
 ## Tentang aplikasi
 
-Earthquake Tracker mengambil data kejadian gempa dari [USGS Earthquake Catalog API](https://earthquake.usgs.gov/fdsnws/event/1/), mengubah respons GeoJSON-nya menjadi objek Dart, lalu menampilkannya sebagai daftar yang mudah dipindai: magnitudo di dalam lingkaran berwarna, lokasi, waktu relatif, dan kedalaman. Ketuk satu gempa untuk melihat detailnya.
+Earthquake Tracker mengambil data kejadian gempa dari [USGS Earthquake Catalog API](https://earthquake.usgs.gov/fdsnws/event/1/), mengubah respons GeoJSON-nya menjadi objek Dart, lalu menampilkannya sebagai daftar yang mudah dipindai: magnitudo di dalam lingkaran berwarna, lokasi, waktu relatif, dan kedalaman. 
 
 Proyek ini dibuat untuk UTS Pemrograman Mobile dan sengaja fokus pada tiga hal: request HTTP, konversi JSON ke model, dan penanganan loading, sukses, serta error dengan `FutureBuilder`.
 
@@ -58,31 +58,21 @@ Setiap perubahan filter membuat `Future` baru, dan `FutureBuilder` membangun ula
 | Flutter, Dart | Framework dan bahasa (Material 3) |
 | [`http`](https://pub.dev/packages/http) | Request ke API USGS |
 | [`intl`](https://pub.dev/packages/intl) | Format tanggal bahasa Indonesia |
-| `flutter_test`, `http/testing` | Unit test dengan `MockClient`, tanpa jaringan |
 
 ## Menjalankan
 
 Butuh Flutter SDK 3.22 atau lebih baru, serta emulator atau perangkat dengan koneksi internet.
 
 ```bash
-git clone https://github.com/<username>/earthquake_tracker.git
-cd earthquake_tracker
+git clone https://github.com/MnaufalH/Earthquake-Tracker.git
+cd Earthquake-Tracker
 
 # hanya jika folder android/ dan ios/ belum ada
-flutter create --project-name earthquake_tracker .
+flutter create --project-name Earthquake-Tracker .
 
 flutter pub get
 flutter run
 ```
-
-Menjalankan unit test:
-
-```bash
-flutter test
-```
-
-> **Catatan performa.** Mode debug lambat, terutama di emulator. Untuk menilai kelancaran, pakai `flutter run --profile` atau perangkat asli.
-> **Build rilis Android** memerlukan izin `android.permission.INTERNET` di `AndroidManifest.xml`.
 
 <details>
 <summary>Struktur folder</summary>
@@ -114,4 +104,4 @@ U.S. Geological Survey, [Earthquake Catalog API](https://earthquake.usgs.gov/fds
 
 ## Pembuat
 
-[Nama Lengkap] · [NIM] · [Program Studi], [Universitas]
+[Muhammad Naufal Hanif] · [240605110097] · [Teknik Informatika], [Universitas Islam Negeri Maulana Malik Ibrahim Malang]
