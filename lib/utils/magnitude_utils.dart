@@ -6,7 +6,7 @@ class MagnitudeInfo {
   const MagnitudeInfo(this.label, this.color);
 }
 
-/// Klasifikasi sederhana kekuatan gempa berdasarkan magnitudo.
+/// Klasifikasi kekuatan gempa berdasarkan magnitudo.
 MagnitudeInfo magnitudeInfo(double mag) {
   if (mag < 2.0) return const MagnitudeInfo('Sangat kecil', Color(0xFF43A047));
   if (mag < 4.0) return const MagnitudeInfo('Kecil', Color(0xFF9E9D24));
@@ -16,7 +16,6 @@ MagnitudeInfo magnitudeInfo(double mag) {
   return const MagnitudeInfo('Sangat kuat', Color(0xFFB71C1C));
 }
 
-/// Teks waktu relatif, misalnya "5 menit lalu".
 String timeAgo(DateTime time) {
   final diff = DateTime.now().difference(time);
   if (diff.inMinutes < 1) return 'baru saja';

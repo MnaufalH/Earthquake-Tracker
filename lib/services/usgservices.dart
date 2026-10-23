@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 
 import '../models/earthquake.dart';
 
-/// Exception khusus agar UI dapat menampilkan pesan error yang ramah.
+/// Exception UI  menampilkan pesan error
 class ApiException implements Exception {
   final String message;
   final int? statusCode;
@@ -17,7 +17,7 @@ class ApiException implements Exception {
   String toString() => message;
 }
 
-/// Service untuk mengambil data gempa dari USGS FDSN Event Web Service.
+/// Service mengambil data gempa dari USGS FDSN Event Web Service.
 class UsgsService {
   static const String baseUrl =
       'https://earthquake.usgs.gov/fdsnws/event/1/query';
@@ -56,7 +56,7 @@ class UsgsService {
       final response =
       await _client.get(uri).timeout(const Duration(seconds: 20));
 
-      // 204 = tidak ada gempa yang cocok dengan filter (bukan error).
+      // 204 = tidak ada gempa yang cocok dengan filter.
       if (response.statusCode == 204) return [];
 
       if (response.statusCode != 200) {
